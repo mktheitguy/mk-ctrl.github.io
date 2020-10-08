@@ -12,7 +12,7 @@ require 'vendor/autoload.php';
 // Replace this with your own email address
 $myEmail = 'awais@mkhalid.ca';
 $from = 'mk@mkhalid.ca';
-$from_name = 'Contact Form: mkhalid.ca';
+$from_name = 'Message from mkhalid.ca';
 
 
 if($_POST) {
@@ -37,17 +37,7 @@ if($_POST) {
    // Subject
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
-    $mail = new PHPMailer(true);
-    try {
-      //Server settings
-      $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      // Enable verbose debug output
-      $mail->isSMTP();                                            // Send using SMTP
-      $mail->Host       = 'smtp.office365.com';                    // Set the SMTP server to send through
-      $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-      $mail->Username   = 'test@example.com';                     // SMTP username
-      $mail->Password   = 'Test123';                               // SMTP password
-      $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
-      $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+     $mail = new PHPMailer(true);
 
       //Recipients
       $mail->setFrom($from, $from_name);
@@ -59,11 +49,12 @@ if($_POST) {
       $mail->Subject = $subject;
       $mail->Body    = $contact_message;
       $mail->AltBody = $contact_message;
-
-      $mail->send();
-      echo 'Message has been sent';
-    } catch (Exception $e) {
-      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    }
+     
+      //send the message, check for errors
+     if (!$mail->send()) {
+       echo 'Mailer Error: '. $mail->ErrorInfo;
+     } else {
+       echo 'Message sent!';
+     }
 
 }
