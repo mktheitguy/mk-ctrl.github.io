@@ -1,18 +1,12 @@
 ﻿<?php
-
-// Import PHPMailer classes into the global namespace
-// These must be at the top of your script, not inside a function
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
-
-// Load Composer's autoloader
-require 'vendor/autoload.php';
+require("./PHPMailer-master/src/PHPMailer.php");
+require("./PHPMailer-master/src/SMTP.php");
+require("./PHPMailer-master/src/Exception.php");
 
 // Replace this with your own email address
-$myEmail = 'awais@mkhalid.ca';
-$from = 'mk@mkhalid.ca';
-$from_name = 'Message from mkhalid.ca';
+$myEmail = 'mk@mkhalid.ca';
+$from = 'info@mkhalid.ca';
+$from_name = 'Message from https://mkhalid.ca';
 
 
 if($_POST) {
@@ -37,16 +31,24 @@ if($_POST) {
    // Subject
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
-     $mail = new PHPMailer(true);
+     $mail = new PHPMailer\PHPMailer\PHPMailer();
 
       //Recipients
       $mail->setFrom($from, $from_name);
       $mail->addAddress($myEmail);     // Add a recipient
       $mail->addReplyTo($email, $name);
 
+      //Prepeare the body of the message with all the info
+      $name = "<b>Contact Name:</b> " . $name;
+      $email = "<b>Contact Email:</b> " . $email;
+      $subject = "<b>Subject:</b> " . $subject;
+      $contact_message = "<b>Message:</b> " . $contact_message;
+      $contact_message = $name . "<br><br>" . $email . "<br><br>" . $subject . "<br><br>" . $contact_message;
+
+
     // Content
       $mail->isHTML(true);                                  // Set email format to HTML
-      $mail->Subject = $subject;
+      $mail->Subject = "Message from you MKHALID site";
       $mail->Body    = $contact_message;
       $mail->AltBody = $contact_message;
      
