@@ -372,7 +372,7 @@ header .header-logo a{width:54px;height:54px;background-size:54px 54px;}
 }
 @media only screen and (max-width:400px){#header-menu-trigger .header-menu-text{display:none;}
 }
-#home{background:#151515;width:100%;height:100%;background-image:url(../images/bg5.jpg);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;min-height:804px;position:relative;}
+#home{background:#151515;width:100%;height:100%;background-image:url(https://res.cloudinary.com/mehmood/image/upload/s--28WXMLNn--/q_100/v1669758791/mkhalid/bg5.webp);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;min-height:804px;position:relative;}
 #home .gradient-overlay{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.2;background:-moz-linear-gradient(left, black 0%, black 20%, transparent 100%);background:-webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);background:linear-gradient(to right, black 0%, black 20%, transparent 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);}
 #home .overlay{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.6;background-color:#000000;}
 .home-content-table{width:100%;height:100%;display:table;position:relative;}
@@ -485,7 +485,7 @@ header .header-logo a{width:54px;height:54px;background-size:54px 54px;}
 .about-services ul.services .service-item{padding-left:0;margin-bottom:3rem;}
 .about-services ul.services .service-item h4{margin-bottom:1.5rem;}
 }
-#skills{background-color:#1f0e01;background-image:url(../images/skills-bg.jpg);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;min-height:800px;position:relative;padding:12rem 0 9.6rem;color:rgba(255, 255, 255, 0.3);}
+#skills{background-color:#1f0e01;background-image:url(https://res.cloudinary.com/mehmood/image/upload/s--Aa_LXNgu--/q_100/v1669758822/mkhalid/skills-bg.webp);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;min-height:800px;position:relative;padding:12rem 0 9.6rem;color:rgba(255, 255, 255, 0.3);}
 #skills .overlay{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.7;background-color:#000000;}
 #skills .gradient-overlay{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.2;background:-moz-linear-gradient(left, black 0%, black 20%, transparent 100%);background:-webkit-linear-gradient(left, black 0%, black 20%, transparent 100%);background:linear-gradient(to right, black 0%, black 20%, transparent 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#00000000', GradientType=1);}
 #skills .row{position:relative;}
@@ -581,7 +581,7 @@ header .header-logo a{width:54px;height:54px;background-size:54px 54px;}
 #stats .stat h3::before{content:"";display:inline-block;width:80px;height:3px;background-color:rgba(5, 100, 139, 0.1);background-color:rgba(255, 255, 255, 0.1);text-align:center;position:absolute;top:0;left:50%;margin-left:-40px;}
 @media only screen and (max-width:768px){#stats .stat:nth-child(n){border:none;padding-bottom:2.4rem;}
 }
-#contact{background-color:#111111;background-image:url(../images/bg4.jpg);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;padding-top:10.2rem;padding-bottom:6rem;position:relative;}
+#contact{background-color:#111111;background-image:url(https://res.cloudinary.com/mehmood/image/upload/s--4VEu9pDz--/q_100/v1669758851/mkhalid/bg4.webp);background-repeat:no-repeat;background-position:center;-webkit-background-size:cover;-moz-background-size:cover;background-size:cover;padding-top:10.2rem;padding-bottom:6rem;position:relative;}
 #contact .overlay{position:absolute;top:0;left:0;width:100%;height:100%;opacity:.7;background-color:#000000;}
 #contact .section-intro h1{color:white;}
 #contact .section-intro h3{color:#7c3b08;}
