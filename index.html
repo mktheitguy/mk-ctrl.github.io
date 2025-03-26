@@ -681,21 +681,20 @@
 
     <script>
         function initMap() {
-            const uluru = {
-                lat: 45.54289,
-                lng: -73.85237
-            };
-            const map = new google.maps.Map(document.getElementById('map'), {
+            const position = { lat: 45.54289, lng: -73.85237 };
+            const map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 15,
-                center: uluru
+                center: position
             });
-            new google.maps.marker.AdvancedMarkerElement({
-                map,
-                position: uluru,
-              });
+            
+            new google.maps.Marker({
+                position: position,
+                map: map
+            });
         }
     </script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvIJeRJAUVURCZzGdtz0Q6wiH7zKU9eCg&callback=initMap&loading=async"></script>
+   <!-- Google Maps script with: -->
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvIJeRJAUVURCZzGdtz0Q6wiH7zKU9eCg&callback=initMap&loading=async&v=beta&libraries=marker"></script>
 
 </body>
 
