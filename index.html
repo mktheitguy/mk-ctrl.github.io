@@ -36,8 +36,7 @@
     <!-- favicons
 	================================================== -->
     <link rel="shortcut icon" href="https://res.cloudinary.com/mehmood/image/upload/s--hR2r2Nj9--/v1504912357/favicon_cmblcw.ico" type="image/x-icon">
-    <link rel="icon" href="http://res.cloudinary.com/mehmood/image/upload/s--hR2r2Nj9--/v1504912357/favicon_cmblcw.ico" type="image/x-icon">
-    <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
+    <link rel="icon" href="https://res.cloudinary.com/mehmood/image/upload/s--hR2r2Nj9--/v1504912357/favicon_cmblcw.ico" type="image/x-icon">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-M60SFKZ2D7"></script>
     <script>
@@ -682,21 +681,21 @@
 
     <script>
         function initMap() {
-            var uluru = {
+            const uluru = {
                 lat: 45.54289,
                 lng: -73.85237
             };
-            var map = new google.maps.Map(document.getElementById('map'), {
+            const map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 15,
                 center: uluru
             });
-            var marker = new google.maps.Marker({
+            new google.maps.marker.AdvancedMarkerElement({
+                map,
                 position: uluru,
-                map: map
-            });
+              });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvIJeRJAUVURCZzGdtz0Q6wiH7zKU9eCg&callback=initMap" async defer></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvIJeRJAUVURCZzGdtz0Q6wiH7zKU9eCg&callback=initMap&loading=async"></script>
 
 </body>
 
