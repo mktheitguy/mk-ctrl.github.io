@@ -10,9 +10,10 @@
     <!--- basic page needs
    ================================================== -->
     <meta charset="utf-8">
-    <title>MK</title>
-    <meta name="description" content="Mehmood Khalid - Freelance Web Developer based in Montreal, Canada. Specializing in FullStack Web Development, Web Designing and Project Management.">
+    <title>Mehmood Khalid – Freelance Web Developer in Montreal | Full-Stack Web Development</title>
+    <meta name="description" content="Freelance Web Developer based in Montreal, specializing in full-stack web development, responsive design, and custom web applications. 7+ years experience delivering fast, scalable solutions. Get a high-performance website or app tailored to your business – contact Mehmood today!">
     <meta name="author" content="Mehmood Khalid">
+    <meta name="keywords" content="web developer, full-stack web developer, Montreal, hire web developer, Quebec, Laravel, React, Ruby on Rails, Web Design, Canada, Web Development, Web Designing">
     <meta property="og:title" content="Mehmood Khalid - Web Developer">
     <meta property="og:description" content="Web Developer based in Montreal, Canada. Specializing in FullStack Web Development, Web Designing and Project Management.">
     <meta property="og:image" content="https://res.cloudinary.com/mehmood/image/upload/s--hR2r2Nj9--/v1504912357/favicon_cmblcw.ico">
@@ -26,12 +27,15 @@
    ================================================== -->
     <link rel="stylesheet" href="css/base.min.css">
     <link rel="stylesheet" href="css/vendor.min.css">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/windows10/windows10.css">
     <link rel="stylesheet" href="css/main.min.css">
+
 
     <!-- script
    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
+    <script src="js/modernizr.js" async></script>
+    <!-- <script src="js/pace.min.js" defer></script> -->
 
     <!-- favicons
 	================================================== -->
@@ -47,24 +51,120 @@
   	gtag('config', 'G-M60SFKZ2D7');
 </script>
 <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Mehmood Khalid",
-      "jobTitle": "Full-Stack Web Developer",
-      "url": "https://mkhalid.ca",
-      "sameAs": [
-        "https://github.com/mktheitguy",
-        "https://linkedin.com/in/mktheitguy"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Montreal",
-        "addressRegion": "QC",
-        "addressCountry": "CA"
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mehmood Khalid",
+  "jobTitle": "Full-Stack Web Developer",
+  "url": "https://mkhalid.ca",
+  "image": "https://mkhalid.ca/mkhalid.jpg",
+  "description": "Freelance Web Developer based in Montreal, Canada. Specializing in FullStack Web Development, Web Designing and Project Management.",
+  "email": "info@mkhalid.ca",
+  "sameAs": [
+    "https://github.com/mktheitguy",
+    "https://linkedin.com/in/mktheitguy",
+    "https://twitter.com/mktheitguy"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Montreal",
+    "addressRegion": "QC",
+    "addressCountry": "CA",
+    "postalCode": "H7R"
+  },
+  "alumniOf": {
+    "@type": "EducationalOrganization",
+    "name": "Project Management",
+    "url": "https://mcgill.ca"
+  },
+  "hasOccupation": {
+    "@type": "Occupation",
+    "name": "Freelance Web Developer",
+    "skills": "JavaScript,PHP,Python, Ruby on Rails React, Node.js, API Development, DevOps",
+  },
+  "offers": { 
+    "@type": "Offer",
+    "category": "Freelance Web Development Services",
+    "url": "https://mkhalid.ca#contact",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "priceCurrency": "USD",
+      "price": "50-100",
+      "description": "Hourly rate (negotiable for long-term projects)"
+    },
+    "areaServed": ["CA", "US", "Worldwide"],  
+    "availability": "https://schema.org/InStock" 
+  }
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Freelance Full-Stack Web Development",
+  "serviceType": "Custom Web Application Development",
+  "provider": {
+    "@type": "Person",
+    "name": "Mehmood Khalid",
+    "url": "https://mkhalid.ca",
+    "image": "https://mkhalid.ca/mkhalid.jpg",
+    "sameAs": "https://linkedin.com/in/mktheitguy"
+  },
+  "description": "Professional freelance web development services for startups and businesses. Expertise in Laravel, React, Rails, APIs, and cloud deployment.",
+  "url": "https://mkhalid.ca#services",
+  "offers": {
+    "@type": "Offer",
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "priceCurrency": "USD",
+      "price": "60-100",
+      "description": "Hourly rate (discounts for long-term projects)"
+    },
+    "availability": "https://schema.org/InStock"
+  },
+  "areaServed": { 
+    "@type": "AdministrativeArea",
+    "name": ["Canada", "United States", "Worldwide"],
+    "description": "Available for remote work globally."
+  },
+  "hasOfferCatalog": { 
+    "@type": "OfferCatalog",
+    "name": "Web Development Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Frontend Development",
+          "description": "React, Next.js, responsive UI/UX design"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Backend Development",
+          "description": "Node.js, API design, database integration, Laravel"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Full-Stack Projects",
+          "description": "End-to-end web app development"
+        }
       }
-    }
-    </script>
+    ]
+  },
+  "brand": { 
+    "@type": "Brand",
+    "name": "MK Web Solutions",
+    "logo": "https://mkhalid.ca/logo.webp",
+  }
+}
+</script>
 
 
 </head>
@@ -77,7 +177,9 @@
     <header>
 
         <div class="header-logo">
-            <a href="index.html">MK</a>
+            <a href="index.html">
+                <img src="data:image/png;base64,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" width="60" height="60" alt="Site logo">
+            </a>
         </div>
 
         <a id="header-menu-trigger" href="#0">
@@ -97,6 +199,7 @@
                 <li><a class="smoothscroll" href="#skills" title="">Skills</a></li>
                 <li><a class="smoothscroll" href="#portfolio" title="">Works</a></li>
                 <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
+                <li><a href="https://techtales.blog"  target="_blank" title="">Blog</a></li>
             </ul>
 
             <ul class="header-social-list">
@@ -141,6 +244,11 @@
                                 <li class="animate-intro">More <a href="#about" class="smoothscroll">About Me</a></li>
                                 <li class="animate-intro">View <a href="#portfolio" class="smoothscroll">My Works</a></li>
                                 <li class="animate-intro">Contact <a href="#contact" class="smoothscroll">By Email</a></li>
+
+                                <br><br>
+                                <li class="animate-intro">Latest in <a href="https://techtales.blog" target="_blank" class="smoothscroll">Blog</a></li>
+                                <li class="animate-intro">Services <a href="/services" class="smoothscroll">My Services</a></li>
+                                <li class="animate-intro">Yes -- <a href="/hire-me" class="smoothscroll">Hire Me</a></li>
                             </ul>
 
                         </div>
@@ -176,7 +284,7 @@
 
                 <div class="intro">
                     <h3 class="animate-this">About</h3>
-                    <h1 class="animate-this">More About Me.</h1>
+                    <h2 class="animate-this">More About Me.</h2>
 
                     <p class="lead animate-this">
                         I'm Mehmood Khalid, a freelance web developer based in Montreal, specializing in <strong>full-stack web development</strong>, <strong>responsive design</strong>, and <strong>custom web applications</strong>. With 7+ years of experience, I transform ideas into fast, scalable, and user-friendly digital solutions.
@@ -203,11 +311,11 @@
             </div>
             <!-- end about-profile  -->
 
-            <div class="about-services">
+            <div id="services" class="about-services">
 
                 <div class="intro">
                     <h3 class="animate-this">Services</h3>
-                    <h1 class="animate-this">How I Can Help</h1>
+                    <h2 class="animate-this">How I Can Help</h2>
 
                     <p class="lead animate-this">
                         I deliver end-to-end web solutions that balance technical excellence with business goals. From initial concept to deployment, I focus on creating fast, secure, and scalable websites that drive results.
@@ -284,7 +392,7 @@
 
                 <div class="section-intro">
                     <h3 class="animate-this">Technical Expertise</h3>
-                    <h1 class="animate-this">My Development Toolkit</h1>
+                    <h2 class="animate-this">My Development Toolkit</h2>
 
                     <p class="animate-this">I specialize in building performant, scalable web solutions using these technologies:
                     </p>
@@ -321,7 +429,7 @@
         <div class="row narrow section-intro with-bottom-sep">
             <div class="col-twelve">
                 <h3 class="animate-this">Portfolio</h3>
-                <h1 class="animate-this">Proven Web Solutions for Real Businesses</h1>
+                <h2 class="animate-this">Proven Web Solutions for Real Businesses</h2>
 
                 <p class="lead animate-this">
                     I transform complex business needs into elegant technical solutions. My recent projects demonstrate expertise in:
@@ -524,7 +632,7 @@
         <div class="row narrow section-intro">
             <div class="col-twelve">
                 <h3 class="animate-this">Get in Touch</h3>
-                <h1 class="animate-this">Let's Build Your Next Web Project</h1>
+                <h2 class="animate-this">Let's Build Your Next Web Project</h2>
 
                 <p class="lead animate-this">
                     Ready to transform your ideas into high-performance web solutions? I specialize in:
